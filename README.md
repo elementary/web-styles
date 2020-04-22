@@ -1,2 +1,3 @@
 # web-styles
-Stylesheet(s) for elementary web projects
+
+WIP stylesheet(s) for elementary web projects. Not currently used by any projects, as it's more a proof-of-concept for now.
