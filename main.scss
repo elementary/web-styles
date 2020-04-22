@@ -1,0 +1,25 @@
+---
+redirect_from:
+  - /
+---
+
+@import "colors";
+@import "links";
+@import "typography";
+
+:root {
+    color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  fill: var(--fg-color);
+  margin: 0;
+  overflow-x: hidden;
+}
