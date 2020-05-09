@@ -1,0 +1,103 @@
+:root {
+  --strawberry-100: #FF8C82;
+  --strawberry-300: #ED5353;
+  --strawberry-500: #C6262E;
+  --strawberry-700: #A10705;
+  --strawberry-900: #7A0000;
+
+  --orange-100: #FFC27D;
+  --orange-300: #FFA154;
+  --orange-500: #F37329;
+  --orange-700: #CC3B02;
+  --orange-900: #A62100;
+
+  --banana-100: #FFF394;
+  --banana-300: #FFE16B;
+  --banana-500: #F9C440;
+  --banana-700: #D48E15;
+  --banana-900: #AD5F00;
+
+  --lime-100: #D1FF82;
+  --lime-300: #9BDB4D;
+  --lime-500: #68B723;
+  --lime-700: #3A9104;
+  --lime-900: #206B00;
+
+  --blueberry-100: #8CD5FF;
+  --blueberry-300: #64BAFF;
+  --blueberry-500: #3689E6;
+  --blueberry-700: #0D52BF;
+  --blueberry-900: #002E99;
+
+  --grape-100: #E4C6FA;
+  --grape-300: #CD9EF7;
+  --grape-500: #A56DE2;
+  --grape-700: #7239B3;
+  --grape-900: #452981;
+
+  --cocoa-100: #A3907C;
+  --cocoa-300: #8A715E;
+  --cocoa-500: #715344;
+  --cocoa-700: #57392D;
+  --cocoa-900: #3D211B;
+
+  --silver-100: #FAFAFA;
+  --silver-300: #D4D4D4;
+  --silver-500: #ABACAE;
+  --silver-700: #7E8087;
+  --silver-900: #555761;
+
+  --slate-100: #95A3AB;
+  --slate-300: #667885;
+  --slate-500: #485A6C;
+  --slate-700: #273445;
+  --slate-900: #0E141F;
+
+  --black-100: #666666;
+  --black-300: #4D4D4D;
+  --black-500: #333333;
+  --black-700: #1A1A1A;
+  --black-900: #000000;
+
+  --bg-color: var(--silver-100);
+  --fg-color: var(--black-500);
+  --view-color: white;
+  --dim-color: color-mod(var(--silver-300 blend(var(--silver-100, 50%))));
+
+  --link-color:  var(--blueberry-700);
+
+  --status-bg-color: color-mod(var(--silver-300) alpha(50%));
+  --status-fg-color: var(--silver-900);
+
+  --success-bg-color: color-mod(var(--lime-100) alpha(50%));
+  --success-fg-color: var(--lime-900);
+
+  --warning-bg-color: color-mod(var(--banana-100) alpha(50%));
+  --warning-fg-color: var(--banana-900);
+
+  --critical-bg-color: color-mod(var(--strawberry-100) alpha(50%));
+  --critical-fg-color: var(--strawberry-900);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: color-mod(var(--black-900 blend(var(--black-700, 50%))));
+    --fg-color: var(--silver-300);
+    --view-color: color-mod(var(--black-500 blend(var(--black-700, 50%))));
+    --dim-color: var(--black-700);
+
+    --link-color: var(--blueberry-100);
+
+    --status-bg-color: color-mod(var(--silver-500) alpha(75%));
+    --status-fg-color: var(--silver-100);
+
+    --success-bg-color: color-mod(var(--lime-500) alpha(75%));
+    --success-fg-color: var(--lime-100);
+
+    --warning-bg-color: color-mod(var(--banana-500) alpha(75%));
+    --warning-fg-color: var(--banana-100);
+
+    --critical-bg-color: color-mod(var(--strawberry-500) alpha(75%));
+    --critical-fg-color: var(--strawberry-100);
+  }
+}
