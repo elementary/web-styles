@@ -1,14 +1,9 @@
----
-redirect_from:
-  - /
----
-
 @import "colors";
 @import "links";
 @import "typography";
 
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 * {
