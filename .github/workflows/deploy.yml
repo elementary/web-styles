@@ -23,7 +23,7 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Lint
+      - name: Build
         run: npm run build
 
   Deploy:
@@ -43,7 +43,7 @@ jobs:
       - name: Install
         run: npm ci
 
-      - name: Lint
+      - name: Build
         run: npm run build
 
       - name: Deploy
